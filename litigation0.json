@@ -1,0 +1,228 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "applyTheme",
+      "themeName": "Blue Dreams"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scAdditionalComments",
+      "displayName": "Additional Comments",
+      "isRequired": false,
+      "id": "2f079c0b-cba0-4ffd-810c-57efbcefb8f9"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scBatesNumber",
+      "displayName": "Bates #",
+      "isRequired": false,
+      "id": "b8bfba1c-f4ce-4b79-8792-66dfdcdf918f"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{f0f76994-187e-43a7-bc59-e70dc4b6a477}\" Type=\"Choice\" DisplayName=\"Category\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scCategory\" Name=\"scCategory\"><CHOICES><CHOICE>Person</CHOICE><CHOICE>Provider</CHOICE><CHOICE>Non-provider</CHOICE><CHOICE>Attorney</CHOICE><CHOICE>Group</CHOICE></CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scComment",
+      "displayName": "Comment",
+      "isRequired": false,
+      "id": "700acb34-8592-4c52-b0b7-f39803bf61a3"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scComments",
+      "displayName": "Comments",
+      "isRequired": false,
+      "id": "84b731e1-2bed-4d77-ae39-5167b8ef140b"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scDateFiledWithCourt",
+      "displayName": "Date Filed With Court",
+      "isRequired": false,
+      "id": "246b6fd7-cd8a-4fdd-bddc-d260624f44dd"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scDateServed",
+      "displayName": "Date Served",
+      "isRequired": false,
+      "id": "e5ffb92d-41f2-459f-85a5-8a00243ba7f8"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scDefendant",
+      "displayName": "Defendant",
+      "isRequired": false,
+      "id": "caa0ef6c-e1ce-40d8-9353-999bc2c63abb"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scDepDate",
+      "displayName": "Dep Date",
+      "isRequired": false,
+      "id": "64d43346-4d80-4ab2-b3e1-7171a0510f35"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scDepNo",
+      "displayName": "Dep No.",
+      "isRequired": false,
+      "id": "dc8d538f-a2eb-445b-ad82-cf4c4edc9925"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scItemDescription",
+      "displayName": "Item Description",
+      "isRequired": false,
+      "id": "9e8bb786-31fb-4e2b-a044-33675f4bbccc"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scDocDescription",
+      "displayName": "Doc Description",
+      "isRequired": false,
+      "id": "34788e88-a195-4154-a071-2e893513b9c5"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{88c10fd2-1fc8-46ec-be14-9a586477bfd4}\" Type=\"Choice\" DisplayName=\"Doc Type\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"scDocType\" Name=\"scDocType\"><CHOICES>
+      <CHOICE>A-Z Medical Management Docs</CHOICE>
+      <CHOICE>Agreements/Contracts</CHOICE>
+      <CHOICE>Appendices Used in Allstate v. Davit Litigation</CHOICE>
+      <CHOICE>BOR's/Payment Tables</CHOICE>
+      <CHOICE>Certifications, Affidavits and Signed Statements</CHOICE>
+      <CHOICE>Corporate Documents</CHOICE>
+      <CHOICE>Claimant EOBs, Police Reports, Claimant Attorney Correspondence and misc PIP file docs</CHOICE>
+      <CHOICE>Criminal file and seized materials</CHOICE>
+      <CHOICE>Discovery from Prior Litigation</CHOICE>
+      <CHOICE>Duplicates sent with different Bates Stamp Numbers</CHOICE>
+      <CHOICE>Exhibits/1st Amended Comp</CHOICE>
+      <CHOICE>Expert Report/Materials from Prior Litigations</CHOICE>
+      <CHOICE>Investigative Notes/Reports</CHOICE>
+      <CHOICE>Khorozian PMACJ and PPM Arb Files</CHOICE>
+      <CHOICE>Miscellaneous Documents</CHOICE>
+      <CHOICE>Mortgage Lease/Rental Documents</CHOICE>
+      <CHOICE>OIFP Greenberg Documents</CHOICE>
+      <CHOICE>Order</CHOICE>
+      <CHOICE>PIP Records (Including Exhibits D and E to 1st Amended Complaint)</CHOICE>
+      <CHOICE>Plaintiff Allstate Khorozian PIP ARB Files</CHOICE>
+      <CHOICE>Pleadings</CHOICE>
+      <CHOICE>R. 4:18-2 1st Amended Comp</CHOICE>
+      <CHOICE>R. 4:18-2 Original Complaint</CHOICE>
+      <CHOICE>Transcript</CHOICE></CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scDocketNo",
+      "displayName": "Docket No.",
+      "isRequired": false,
+      "id": "b9cfbf79-2bf5-4f59-bdd0-a3fb07fd5446"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scDocumentDate",
+      "displayName": "Document Date",
+      "isRequired": false,
+      "id": "8ce59c55-8af3-44dd-9e0a-e3b584877a28"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Note",
+      "internalName": "scDocumentDescription",
+      "displayName": "Document Description",
+      "isRequired": false,
+      "id": "1f4c8b81-e278-4df0-b21a-55bd38fb7acf"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{06537fe7-bd53-4f0d-b1e9-5ecf6e2ebc95}\" Type=\"Choice\" DisplayName=\"Filed With Court\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"scFiledWithCourt\" Name=\"scFiledWithCourt\"><CHOICES><CHOICE>Yes</CHOICE><CHOICE>No</CHOICE></CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{6ffed901-2802-46e3-9631-375635163b94}\" Type=\"Choice\" DisplayName=\"Format\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scFormat\" Name=\"scFormat\"><CHOICES><CHOICE>Full Page</CHOICE><CHOICE>Full Page w Exhibits</CHOICE><CHOICE>Original</CHOICE><CHOICE>Minu-Script</CHOICE><CHOICE>Minu-Script w Exhibits</CHOICE><CHOICE>TXT</CHOICE><CHOICE>Exhibits</CHOICE><CHOICE>Index</CHOICE></CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{38b1bad4-453d-46a2-86f2-e8904fc7b459}\" Type=\"Choice\" DisplayName=\"From\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scFromChoice\" Name=\"scFromChoice\"><CHOICES>
+        <CHOICE>Alba</CHOICE>
+        <CHOICE>Anzano</CHOICE>
+        <CHOICE>Berkowitz</CHOICE>
+        <CHOICE>Bonanno</CHOICE>
+        <CHOICE>Cheung</CHOICE>
+        <CHOICE>D Antonio</CHOICE>
+        <CHOICE>Galizio</CHOICE>
+        <CHOICE>Guido</CHOICE>
+        <CHOICE>Hall</CHOICE>
+        <CHOICE>Haulenbeek</CHOICE>
+        <CHOICE>Hunczak</CHOICE>
+        <CHOICE>Mulvihill</CHOICE>
+        <CHOICE>O Connell</CHOICE>
+        <CHOICE>O Hara</CHOICE>
+        <CHOICE>Pringle</CHOICE>
+        <CHOICE>Quinn</CHOICE>
+        <CHOICE>Schreck</CHOICE>
+        <CHOICE>Schwartz</CHOICE>
+        <CHOICE>Shah</CHOICE>
+        <CHOICE>Towell</CHOICE>
+        <CHOICE>Waldron</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scFromText",
+      "displayName": "From",
+      "isRequired": false,
+      "id": "0d02eb98-01ac-43f1-a2cc-1bdbfe5af81c"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scJudge",
+      "displayName": "Judge",
+      "isRequired": false,
+      "id": "31f2f64d-663f-4bc7-8130-786990d2512c"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scLastName",
+      "displayName": "Last Name",
+      "isRequired": false,
+      "id": "6655ef2a-14c3-42a9-b6ca-d665a787a347"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scNJLSNo",
+      "displayName": "NJLS No.",
+      "isRequired": false,
+      "id": "ba2da3d2-0770-43cc-aeb4-d5892a7ccdff"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scNOMNo",
+      "displayName": "NOM No.",
+      "isRequired": false,
+      "id": "75017850-40ca-4c9d-8a53-ec4d83ed6891"
+    }
+  ],
+  "version": 1
+}

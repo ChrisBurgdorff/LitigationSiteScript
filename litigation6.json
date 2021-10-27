@@ -1,0 +1,148 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "removeNavLink",
+      "displayName": "Home",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Conversations",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Documents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Shared with us",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Notebook",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Pages",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Site contents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Recycle Bin",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Drop Off Center",
+      "displayName": "Drop Off Center",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Draft Complaint",
+      "displayName": "Draft Complaint",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents",
+      "displayName": "Litigation Documents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Appendices.aspx",
+      "displayName": "Appendices",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Correspondence.aspx",
+      "displayName": "Correspondence",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Court Notices.aspx",
+      "displayName": "Court Notices",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Deposition Notices.aspx",
+      "displayName": "Deposition Notices",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Discovery.aspx",
+      "displayName": "Discovery",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Motion.aspx",
+      "displayName": "Motion",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Orders.aspx",
+      "displayName": "Orders",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Pleadings.aspx",
+      "displayName": "Pleadings",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Proof Of Service.aspx",
+      "displayName": "Proof Of Service",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Settlement Documents.aspx",
+      "displayName": "Settlment Documents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Fucking Subpoenas",
+      "displayName": "Subpoenas",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Subpoenaed Documents Received Misc.aspx",
+      "displayName": "Subpoenaed Documents Received (Misc)",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Summons.aspx",
+      "displayName": "Summons",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Litigation Documents/Forms/Transcripts.aspx",
+      "displayName": "Transcripts",
+      "isWebRelative": true
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,507 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{0bbce137-bf63-4a3e-a420-2a532a7d61c9}\" Type=\"Lookup\" DisplayName=\"Motion Part\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spMotionPartLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luMotionPart\" Name=\"luMotionPart\" />",
+      "targetListName": "Motion Part"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{e6357607-796c-4de5-aa84-55ce36ad1401}\" Type=\"Lookup\" DisplayName=\"Motion Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spMotionTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luMotionType\" Name=\"luMotionType\" />",
+      "targetListName": "Motion Type"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{78e4867a-2a75-4a9c-b690-cfc6799d5902}\" Type=\"Lookup\" DisplayName=\"Moving Party\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luMovingParty\" Name=\"luMovingParty\" />",
+      "targetListName": "Person and Entity List"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{60abacac-00e7-4016-a51a-1ef9a8a990b9}\" Type=\"Lookup\" DisplayName=\"Non-Defendant\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luNonDefendant\" Name=\"luNonDefendant\" />",
+      "targetListName": "Person and Entity List"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{34667acb-8d33-4953-b078-040992ef9674}\" Type=\"Lookup\" DisplayName=\"Non-Party Witness\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luNonPartyWitness\" Name=\"luNonPartyWitness\" />",
+      "targetListName": "Person and Entity List"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{a717438d-f587-4903-b21d-9f434b53aedb}\" Type=\"Lookup\" DisplayName=\"Order Description\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spOrderDescription\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luOrderDescription\" Name=\"luOrderDescription\" />",
+      "targetListName": "Order Description"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{68b16d8d-049c-44f5-b285-8f7bef6b0834}\" Type=\"Lookup\" DisplayName=\"Order Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spOrderType\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luOrderType\" Name=\"luOrderType\" />",
+      "targetListName": "Order Type"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{7c638bb8-cf86-4653-bc5f-1cfcf90ac2e9}\" Type=\"MultiChoice\" DisplayName=\"Person and Entity Group Members\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luPersonAndEntityGroupMembers\" Name=\"luPersonAndEntityGroupMembers\" />",
+      "targetListName": "Person and Entity List"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{785f51c6-57c4-4bf9-9e6a-388b3d8d0ca4}\" Type=\"Lookup\" DisplayName=\"Pleading Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spPleadingTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luPleadingType\" Name=\"luPleadingType\" />",
+      "targetListName": "Pleading Doc Type"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{84f2c0ad-bafb-45b9-a04b-0815db3dcfbf}\" Type=\"Lookup\" DisplayName=\"Served Doc Types\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spServedDocumentTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luServedDocTypes\" Name=\"luServedDocTypes\" />",
+      "targetListName": "Served Doc Types"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{5dd889bb-1163-41bb-a806-353c31c37760}\" Type=\"Lookup\" DisplayName=\"Settlement Document Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spSettlementDocType\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luSettlementDocumentType\" Name=\"luSettlementDocumentType\" />",
+      "targetListName": "Settlement Doc Types"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{21d0931a-5d17-4ff0-9430-607fb7674460}\" Type=\"Lookup\" DisplayName=\"Transcript Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spTranscriptTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luTranscriptType\" Name=\"luTranscriptType\" />",
+      "targetListName": "Transcript Doc Type"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{e67fbadc-6430-4a8b-984f-308b7d540167}\" Type=\"Lookup\" DisplayName=\"Motion Type 2\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spPleadingTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luMotionType2\" Name=\"luMotionType2\" />",
+      "targetListName": "Pleading Doc Type"
+    },
+    {
+      "verb": "createContentType",
+      "name": "Agreements",
+      "description": "CT for adding an Agreement",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scBatesNumber"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocType"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Appendices",
+      "description": "CT for adding an Appendix",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scRelatedDocs"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scVolumeName"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Certifications",
+      "description": "CT for adding a Certification",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scBatesNumber"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scLastName"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luNonDefendant"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocType"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Correspondence",
+      "description": "CT for adding Correspondence",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scTo"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scFromChoice"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luCorrespondenceType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scReceived"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scRelatedDocs"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Court Notices",
+      "description": "CT for adding a Court Notice",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luCourtNoticeType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scReceived"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Deposition Notices",
+      "description": "CT for adding a Deposition",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDeponent"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDeposingAttorney"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDepDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scComments"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Discovery",
+      "description": "CT for adding Discovery",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendantGroups"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDiscoverySet"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDiscoveryType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scBatesNumber"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scRelatedDocs"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scROGNTPRFA"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scReceived"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Discovery Docs",
+      "description": "CT for adding Discovery Docs",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocketNo"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDefendant"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scBatesNumber"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocDescription"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Email Folder",
+      "description": "CT for adding an Email Folder",
+      "parentName": "Folder",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scTo"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scFromChoice"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luCorrespondenceType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scFromText"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Motions",
+      "description": "CT for adding a Motion",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scNOMNo"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luMotionPart"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luFilingAttorney"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scNOMSub"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scReturnDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scRelatedDocs"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scMovingParty"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scMotionType"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Orders",
+      "description": "CT for adding an Order",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luOrderType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luOrderDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDateFiledWithCourt"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scItemDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scJudge"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scNOMNo"
+          }
+        ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "Pleadings",
+      "description": "CT for adding a Pleading",
+      "parentName": "Document",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luPleadingType"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDate"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDocumentDescription"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scAdditionalComments"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "luDefendants"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scDateFiledWithCourt"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scFiledWithCourt"
+          }
+        ]
+    }
+  ],
+  "version": 1
+}

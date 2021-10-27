@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "addNavLink",
+      "url": "",
+      "displayName": "",
+      "isWebRelative": false
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Attachment Folders",
+      "displayName": "Attachment Folders",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Document Repository",
+      "displayName": "Document Repository",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Privilege Log Documents",
+      "displayName": "Privilege Log/Documents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "",
+      "displayName": "",
+      "isWebRelative": false
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Experts",
+      "displayName": "Expers",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Summaries Notes Memos",
+      "displayName": "Summaries/Notes/Memos",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Bank Records Analysis",
+      "displayName": "Bank Records Analysis",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Patient Files from Document Inspections",
+      "displayName": "Patient Files from Document Inspections",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/_layouts/15/viewlsts.aspx",
+      "displayName": "Master Lists",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Attorney List",
+      "displayName": "Attorney List",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Contact Information",
+      "displayName": "Contact Information",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Contact Information",
+      "displayName": "Defendants",
+      "isWebRelative": true
+    }
+    
+    
+    
+    /Lists/Attachment Folders
+  ],
+  "version": 1
+}

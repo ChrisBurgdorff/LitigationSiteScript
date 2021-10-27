@@ -1,0 +1,406 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scNOMDEPNo",
+      "displayName": "NOM/DEP No.",
+      "isRequired": false,
+      "id": "17ccbfac-bb2b-4961-a240-b300e58a560a"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{811f44e0-efdc-4be2-887f-774f49c530e4}\" Type=\"Choice\" DisplayName=\"NOM/Sub\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"scNOMSub\" Name=\"scNOMSub\"><CHOICES>
+        <CHOICE>Motion</CHOICE>
+        <CHOICE>Sub Motion</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{6c775014-e4c5-4289-8509-ff432b09eb4f}\" Type=\"Choice\" DisplayName=\"Party to the Litigation\" Required=\"FALSE\" Format=\"RadioButtons\" FillInChoice=\"FALSE\" StaticName=\"scPartyToTheLitigation\" Name=\"scPartyToTheLitigation\"><CHOICES>
+        <CHOICE>Yes</CHOICE>
+        <CHOICE>No</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scPersonEntityNameText",
+      "displayName": "Person/Entity Name",
+      "isRequired": false,
+      "id": "ec73af98-d566-4dff-8aa9-7f97e25528ba"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{43e7cd87-bc6e-4b84-ba35-63c6a0599237}\" Type=\"Choice\" DisplayName=\"PO\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"scPO\" Name=\"scPO\"><CHOICES>
+        <CHOICE>Yes</CHOICE>
+        <CHOICE>No</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scReceived",
+      "displayName": "Received",
+      "isRequired": false,
+      "id": "abfb56b4-f2a7-47da-8172-9f0ae6fe7b22"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{bf6e9956-532f-4ac4-ae58-118d4ee5ceae}\" Type=\"URL\" DisplayName=\"Related Docs\" Required=\"FALSE\" Format=\"Hyperlink\" StaticName=\"scRelatedDocs\" Name=\"scRelatedDocs\"></Field>"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{5e21ce1b-ad72-4baf-a999-0f6e75449c54}\" Type=\"URL\" DisplayName=\"Related Docs 2\" Required=\"FALSE\" Format=\"Hyperlink\" StaticName=\"scRelatedDocs2\" Name=\"scRelatedDocs2\"></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scReturnDate",
+      "displayName": "Return Date",
+      "isRequired": false,
+      "id": "e709959c-38cd-4546-927f-001ef1dbd9b8"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{df7b02e6-0896-4f68-ab37-49f8260b5421}\" Type=\"Choice\" DisplayName=\"ROG/NTP/RFA\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scROGNTPRFA\" Name=\"scROGNTPRFA\"><CHOICES>
+        <CHOICE>ROG</CHOICE>
+        <CHOICE>NTP</CHOICE>
+        <CHOICE>RFA</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "DateTime",
+      "internalName": "scServiceDate",
+      "displayName": "Service Date",
+      "isRequired": false,
+      "id": "2a9e8907-5f89-4efb-be75-4e5290e92cd7"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scSiuID",
+      "displayName": "SiuID",
+      "isRequired": false,
+      "id": "ec003bd5-24c0-440a-94a8-b00975d2336e"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scSiuLink",
+      "displayName": "SiuLink",
+      "isRequired": false,
+      "id": "2ebce38c-77bc-475e-9b99-525f5084d101"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{3671df72-956d-49d6-b12a-05fad60dbc6b}\" Type=\"Choice\" DisplayName=\"To\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scTo\" Name=\"scTo\"><CHOICES>
+        <CHOICE>Alba</CHOICE>
+        <CHOICE>Anzano</CHOICE>
+        <CHOICE>Berkowitz</CHOICE>
+        <CHOICE>Bonanno</CHOICE>
+        <CHOICE>Cheung</CHOICE>
+        <CHOICE>D'Antonio</CHOICE>
+        <CHOICE>Galizio</CHOICE>
+        <CHOICE>Guido</CHOICE>
+        <CHOICE>Hall</CHOICE>
+        <CHOICE>Haulenbeek</CHOICE>
+        <CHOICE>Hunczak</CHOICE>
+        <CHOICE>Mulvihill</CHOICE>
+        <CHOICE>O'Connell</CHOICE>
+        <CHOICE>O'Hara</CHOICE>
+        <CHOICE>Pringle</CHOICE>
+        <CHOICE>Quinn</CHOICE>
+        <CHOICE>Schreck</CHOICE>
+        <CHOICE>Schwartz</CHOICE>
+        <CHOICE>Shah</CHOICE>
+        <CHOICE>Towell</CHOICE>
+        <CHOICE>Waldron</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scTreatingFacility",
+      "displayName": "Treating Facility",
+      "isRequired": false,
+      "id": "bc443782-e51c-4c6e-90ef-151565c74354"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{fb6e4963-757d-4687-baea-22a47c96ab86}\" Type=\"Choice\" DisplayName=\"Video\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"scVideo\" Name=\"scVideo\"><CHOICES>
+        <CHOICE>Yes</CHOICE>
+        <CHOICE>No</CHOICE>
+        </CHOICES></Field>"
+    },
+    {
+      "verb": "createSiteColumn",
+      "fieldType": "Text",
+      "internalName": "scVolumeName",
+      "displayName": "Volume Name",
+      "isRequired": false,
+      "id": "c81fd618-45cb-41cf-912d-6a4a023996ae"
+    },
+    {
+      "verb": "createContentType",
+      "name": "Add Person or Entity",
+      "description": "CT for adding a person or entity",
+      "parentName": "Item",
+      "hidden": false,
+      "group": "Custom Content Types",
+      "subactions":
+        [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scPersonEntityNameText"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scCategory"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scPartyToTheLitigation"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scSiuID"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "scSiuLink"
+          }
+        ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Litigation Calendar",
+      "templateType": 106,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Calendar for Litigation Site"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Correspondence Type",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Correspondence Type List"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Correspondence Type Label",
+          "isRequired": false,
+          "internalName": "spCorrespondenceTypeLabel",
+          "id": "27753e24-5ce9-484f-a921-601ab71cd34f",
+          "addToDefaultView": true
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Court Notice Types",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Court Notice Type List"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Court Notice Type",
+          "isRequired": false,
+          "internalName": "spCourtNoticeType",
+          "id": "f332ace8-fb6c-45f7-85cc-630acf5138c4",
+          "addToDefaultView": true
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Person and Entity List",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Person and Entity List"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scCategory",
+          "addToDefaultView": true
+         },
+         {
+          "verb": "addSiteColumn",
+          "internalName": "scPartyToTheLitigation",
+          "addToDefaultView": true
+         },
+         {
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"Lookup\" DisplayName=\"Person and Entity Group Members\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityName\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{39910525-febb-4c7e-9e8e-9880d0b2afe4}\" StaticName=\"luPersonAndEntityGroupMembers\" Name=\"luPersonAndEntityGroupMembers\" />",
+          "targetListName": "Person and Entity List"
+         },
+         {
+          "verb": "addSiteColumn",
+          "internalName": "scPersonEntityName",
+          "addToDefaultView": true
+         },
+         {
+          "verb": "addSiteColumn",
+          "internalName": "scSiuID",
+          "addToDefaultView": true
+         },
+         {
+          "verb": "addSiteColumn",
+          "internalName": "scSiuLink",
+          "addToDefaultView": true
+         },
+         {
+           "verb": "addContentType",
+           "name": "Add Person or Entity"
+         },
+         {
+          "verb": "addSPView",
+          "name": "People and Entities",
+          "id": "1761e916-6e84-423a-9534-5f4820645f73",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "scCategory",
+            "scPartyToTheLitigation",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Groups",
+          "id": "f88156e3-8c04-4095-9379-da0f1faaddf4",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "luPersonAndEntityGroupMembers",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "SIU DB View",
+          "id": "aa8949df-508f-43e9-8e9f-5cd1cd5b8338",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "scCategory",
+            "scPartyToTheLitigation",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Defendants",
+          "id": "a947fae1-417c-45e4-8c89-79b535cedc69",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "scCategory",
+            "scPartyToTheLitigation",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": true
+        },
+        {
+          "verb": "addSPView",
+          "name": "Moving Parties",
+          "id": "fb3ba702-3b48-4e47-b578-3394f024bcc0",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "scCategory",
+            "scPartyToTheLitigation",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Defendant Groups",
+          "id": "5ec75103-3cee-43b8-aedb-61cc601d9d9b",
+          "viewFields": 
+          [
+            "scPersonEntityName",
+            "scCategory",
+            "scPartyToTheLitigation",
+            "scSiuID",
+            "scSiuLink"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        }
+      ]
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field ID=\"{d85c1c4c-afc1-41e2-b347-390e760aec7a}\" Type=\"MultiChoice\" DisplayName=\"Defendant(s)\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityName\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luDefendants\" Name=\"luDefendants\" />",
+      "targetListName": "Person and Entity List"
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Defendant Groups",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Defendant Group List"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Defendant Group Name",
+          "internalName": "spDefendantGroupName",
+          "isRequired": false,
+          "id": "c3adf8ad-23a4-4d35-b31e-e49472b059de",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDefendants",
+          "addToDefaultView": true
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

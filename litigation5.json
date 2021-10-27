@@ -1,0 +1,838 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "createSPList",
+      "listName": "Litigation Documents",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Litigation Documents Library"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scAdditionalComments"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scBatesNumber"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scComment"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scComments"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luCorrespondenceType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luCourtNoticeType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDateFiledWithCourt"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDateServed"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDefendantGroups"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDefendants"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDepDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDepDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDepNo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDeponent"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDeposingAttorney"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scItemDescription"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDiscoverySet"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luDiscoveryType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDocumentDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDocumentDescription"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scFiledWithCourt"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luFilingAttorney"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scFormat"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scFromChoice"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scFromText"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luHeardBefore"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scJudge"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scLastName"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luMotionPart"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luMotionType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luMotionType2"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luMovingParty"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scMovingParty2"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scNJLSNo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scNOMNo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scNOMDEPNo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scNOMSub"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scNonPartyWitnessText"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luNonPartyWitness"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luOrderDescription"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luOrderType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luPleadingType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scPO"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scReceived"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scRelatedDocs"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scReturnDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scROGNTPRFA"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luServedDocTypes"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scServiceDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luSettlementDocumentType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scTo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luTranscriptType"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scTreatingFacility"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scVersion"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scVideo"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scVolumeName"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Document"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Appendices"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Correspondence"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Court Notices"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Deposition Notices"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Discovery"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Motion"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Orders"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Pleadings"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Proof Of Service"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Settlment Documents"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Subpoena Docs Misc"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Summons"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Transcripts"
+        },
+        {
+          "verb": "addContentType",
+          "name": "Email Folder"
+        },
+        {
+          "verb": "addSPView",
+          "name": "Appendices",
+          "id": "9b1c5ea6-5d8e-4232-b431-3067c8ce84c2",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scVolumeName",
+            "scRelatedDocs",
+            "Modified"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Correspondence",
+          "id": "666df93d-f157-43df-b2a8-b7126043cdcc",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scDocumentDate",
+            "scTo",
+            "scFromChoice",
+            "scReceived",
+            "luCorrespondenceType",
+            "scDocumentDescription",
+            "scRelatedDocs",
+            "scNOMDEPNo",
+            "scNJLSNo",
+            "Modified By"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Court Notices",
+          "id": "83d377fb-f355-40a7-830a-d9b935768dfb",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "luCourtNoticeType",
+            "luDefendants",
+            "scDocumentDescription",
+            "scDocumentDate",
+            "scReceived",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Deposition Notices",
+          "id": "9bce911e-9ab5-4146-a76e-c163e2264b74",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scDocumentDate",
+            "luDeponent",
+            "luDeposingAttorney",
+            "scVideo",
+            "scDepDate",
+            "scDepNo",
+            "scComments",
+            "Modified By"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Discovery",
+          "id": "65f379fc-b736-4f75-9fb4-a9806467998d",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scROGNTPRFA",
+            "scDocumentDate",
+            "luDefendants",
+            "luDefendantGroups",
+            "luDiscoverySet",
+            "luDiscoveryType",
+            "scDocumentDescription",
+            "scRelatedDocs",
+            "scBatesNumber",
+            "scReceived",
+            "Modified By"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Motion",
+          "id": "4d394e6a-1414-49d7-95c7-61cc16c8c232",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name", 
+            "scNOMNo",
+            "scDocumentDate",
+            "luMotionPart",
+            "luMovingParty",
+            "luFilingAttorney",
+            "luMotionType",
+            "luDefendants",
+            "luNonPartyWitness",
+            "scComment",
+            "scNOMSub",
+            "scReturnDate",
+            "scRelatedDocs",
+            "Modified",
+            "Modified By"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Orders",
+          "id": "7588792d-9a69-4770-a819-4d73b3439790",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "scDateFiledWithCourt",
+            "Name",
+            "scPO",
+            "luOrderType",
+            "luOrderDescription",
+            "luDefendants",
+            "scItemDescription",
+            "scJudge",
+            "scNOMNo",
+            "Modified"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Pleadings",
+          "id": "38a9b08a-1d3a-4a67-9359-ae2856aac1a4",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "luPleadingType",
+            "scDocumentDate",
+            "scDateFiledWithCourt",
+            "scDocumentDescription",
+            "scAdditionalComments",
+            "luDefendants",
+            "scFiledWithCourt",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Proof Of Service",
+          "id": "90f213e4-c401-4469-ac94-83bf25ecfcc6",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "luDefendants",
+            "luNonPartyWitness",
+            "luServedDocTypes",
+            "scServiceDate",
+            "scDateFiledWithCourt",
+            "scRelatedDocs",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Settlement Documents",
+          "id": "53735af9-0ce8-47ef-9b14-ff94a6b0c3cb",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scDocumentDate",
+            "luDefendants",
+            "scDocumentDescription",
+            "scRelatedDocs",
+            "luSettlementDocumentType",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Subpoenaed Documents Received (Misc)",
+          "id": "09676d20-895f-4bac-b81c-2298916d5c9c",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scReceived",
+            "luDefendants",
+            "luNonPartyWitness",
+            "scDocumentDescription",
+            "scBatesNumber",
+            "scRelatedDocs",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Summons",
+          "id": "e757aebd-9278-4242-a365-a3a202fe0441",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "luDefendants",
+            "scDocumentDate",
+            "scDateServed",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Transcripts",
+          "id": "bbf193ad-23a8-4431-8008-3d7564ab13f3",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "scDocumentDescription",
+            "luTranscriptType",
+            "scFormat",
+            "scDocumentDate",
+            "luDefendants",
+            "luNonPartyWitness",
+            "luHeardBefore",
+            "Modified",
+            "Content Type"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": false
+        },
+        {
+          "verb": "addSPView",
+          "name": "Queue",
+          "id": "9cfc18d5-2afc-4b27-a4ae-b1b5acbe23bc",
+          "viewFields": 
+          [
+            "ID",
+            "Type",
+            "Name",
+            "Modified",
+            "Modified By",
+            "Content Type",
+            "luDeponent",
+            "luDeposingAttorney",
+            "scPO",
+            "scNJLSNo",
+            "luNonPartyWitness",
+            "scVideo",
+            "scComment"
+          ],
+          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "rowLimit": 100,
+          "isPaged": true,
+          "makeDefault": true
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Litigation Task Library",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Formerly Litigation Task List Library"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Task",
+          "isRequired": false,
+          "internalName": "spTaskTasks",
+          "id": "454db3b1-3ad0-4a46-a89d-90bfe79e1f82",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "DateTime",
+          "displayName": "Due Date",
+          "isRequired": false,
+          "internalName": "spDueDateTasks",
+          "id": "859a9a47-210c-4506-b763-a2ae9da700af",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Assigned",
+          "isRequired": false,
+          "internalName": "spAssignedTasks",
+          "id": "5d547468-ccea-4e59-9aad-289b4c594487",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Status",
+          "isRequired": false,
+          "internalName": "spStatusTasks",
+          "id": "35a099a2-3038-4793-b5a3-f2964e973941",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scRelatedDocs"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Filed By",
+          "isRequired": false,
+          "internalName": "spFiledByTasks",
+          "id": "1cd3aeca-8070-4420-a9b7-58f904d47c0e",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Note",
+          "displayName": "Assignment",
+          "isRequired": false,
+          "internalName": "spAssignmentTasks",
+          "id": "babe9f7b-7cf7-46dd-9ce9-f5d1f8a179b3",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scComments"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Summaries Notes Memos",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Summaries/Notes/Memos Library"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "DateTime",
+          "displayName": "Date Taken/Filmed",
+          "isRequired": false,
+          "internalName": "spDateTakenFilmedSNM",
+          "id": "d96c457c-f930-4dea-8962-942ea519cb80",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDocumentDate"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Author",
+          "isRequired": false,
+          "internalName": "spAuthorSNM",
+          "id": "e1bccbe0-f0fb-40e4-9c25-c1188521551e",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDefendant"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "luNonDefendant"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Orders",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Orders Library"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Patient Files from Document Inspections",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Patient files from document inspections Library"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scDocumentDate"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scFacility"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Claimant Name",
+          "isRequired": false,
+          "internalName": "spClaimantNamePatientFiles",
+          "id": "76cd2d81-d6d4-462f-b988-b89a8432431f",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Multiple Claimants",
+          "isRequired": false,
+          "internalName": "spMultipleClaimantsPatientFiles",
+          "id": "ffb30740-973a-4029-a4e7-61387158dd25",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scReceived"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Privilege Log Documents",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Privilege Log Documents Library"
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Bates Stamp No.",
+          "isRequired": false,
+          "internalName": "spBatesStampNoPrivilegeLog",
+          "id": "b07b3653-299b-41cf-b432-14c7251b177b",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Date Added",
+          "isRequired": false,
+          "internalName": "spDateAddedPrivilegeLog",
+          "id": "4fe10613-420b-48ff-bdff-0b6dc73f1fdf",
+          "addToDefaultView": true
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "scComment"
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Team Documents",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Team Documents Library"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
