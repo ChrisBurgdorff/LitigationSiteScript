@@ -3,12 +3,6 @@
   "actions": [
     {
       "verb": "addNavLink",
-      "url": "",
-      "displayName": "",
-      "isWebRelative": false
-    },
-    {
-      "verb": "addNavLink",
       "url": "/Attachment Folders",
       "displayName": "Attachment Folders",
       "isWebRelative": true
@@ -23,18 +17,13 @@
       "verb": "addNavLink",
       "url": "/Privilege Log Documents",
       "displayName": "Privilege Log/Documents",
-      "isWebRelative": true
-    },
-    {
-      "verb": "addNavLink",
-      "url": "",
-      "displayName": "",
-      "isWebRelative": false
+      "isWebRelative": true,
+      "parentDisplayName": "Document Repository"
     },
     {
       "verb": "addNavLink",
       "url": "/Experts",
-      "displayName": "Expers",
+      "displayName": "Experts",
       "isWebRelative": true
     },
     {
@@ -65,24 +54,109 @@
       "verb": "addNavLink",
       "url": "/Lists/Attorney List",
       "displayName": "Attorney List",
-      "isWebRelative": true
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
     },
     {
       "verb": "addNavLink",
       "url": "/Contact Information",
       "displayName": "Contact Information",
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Person and Entity List/Forms/Defendants.aspx",
+      "displayName": "Defendants",
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Defendant Groups",
+      "displayName": "Defendants",
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Person and Entity List/Forms/Moving Parties.aspx",
+      "displayName": "Moving Parties",
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Person and Entity List",
+      "displayName": "People & Entities List",
+      "isWebRelative": true,
+      "parentDisplayName": "Master Lists"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/",
+      "displayName": "Team Management",
       "isWebRelative": true
     },
     {
       "verb": "addNavLink",
-      "url": "/Contact Information",
-      "displayName": "Defendants",
+      "url": "/Lists/Calendar",
+      "displayName": "Calendar",
+      "isWebRelative": true,
+      "parentDisplayName": "Team Management"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Litigation Task List",
+      "displayName": "Litigation Task List",
+      "isWebRelative": true,
+      "parentDisplayName": "Team Management"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Lists/Tasks",
+      "displayName": "Tasks",
+      "isWebRelative": true,
+      "parentDisplayName": "Team Management"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/Team Documents",
+      "displayName": "Team Documents",
+      "isWebRelative": true,
+      "parentDisplayName": "Team Management"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/",
+      "displayName": "Home Pages",
       "isWebRelative": true
+    },
+    {
+      "verb": "addNavLink",
+      "url": "https://pqaonline.sharepoint.com",
+      "displayName": "PQA Home Page",
+      "isWebRelative": false,
+      "parentDisplayName": "Home Pages"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "https://pqaonline.sharepoint.com/sites/SIU",
+      "displayName": "SIU Home Page",
+      "isWebRelative": false,
+      "parentDisplayName": "Home Pages"
+    },
+    {
+      "verb": "addNavLink",
+      "url": "/_layouts/15/viewlsts.aspx",
+      "displayName": "Site Admin Page",
+      "isWebRelative": true,
+      "parentDisplayName": "Home Pages"
+    },
+    {
+      "verb": "joinHubSite",
+      "hubSiteId": "bbfea0b1-df9b-47fc-9fd3-7a8d4c5ed213"
     }
-    
-    
-    
-    /Lists/Attachment Folders
   ],
   "version": 1
 }

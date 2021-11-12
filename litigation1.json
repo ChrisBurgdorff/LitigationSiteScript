@@ -193,15 +193,6 @@
         {
           "verb": "setDescription",
           "description": "Correspondence Type List"
-        },
-        {
-          "verb": "addSPField",
-          "fieldType": "Text",
-          "displayName": "Correspondence Type Label",
-          "isRequired": false,
-          "internalName": "spCorrespondenceTypeLabel",
-          "id": "27753e24-5ce9-484f-a921-601ab71cd34f",
-          "addToDefaultView": true
         }
       ]
     },
@@ -213,15 +204,6 @@
         {
           "verb": "setDescription",
           "description": "Court Notice Type List"
-        },
-        {
-          "verb": "addSPField",
-          "fieldType": "Text",
-          "displayName": "Court Notice Type",
-          "isRequired": false,
-          "internalName": "spCourtNoticeType",
-          "id": "f332ace8-fb6c-45f7-85cc-630acf5138c4",
-          "addToDefaultView": true
         }
       ]
     },
@@ -245,13 +227,8 @@
           "addToDefaultView": true
          },
          {
-          "verb": "addSPLookupFieldXml",
-          "schemaXml": "<Field Type=\"Lookup\" DisplayName=\"Person and Entity Group Members\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityName\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{39910525-febb-4c7e-9e8e-9880d0b2afe4}\" StaticName=\"luPersonAndEntityGroupMembers\" Name=\"luPersonAndEntityGroupMembers\" />",
-          "targetListName": "Person and Entity List"
-         },
-         {
           "verb": "addSiteColumn",
-          "internalName": "scPersonEntityName",
+          "internalName": "scPersonEntityNameText",
           "addToDefaultView": true
          },
          {
@@ -274,29 +251,21 @@
           "id": "1761e916-6e84-423a-9534-5f4820645f73",
           "viewFields": 
           [
-            "scPersonEntityName",
+            "scPersonEntityNameText",
             "scCategory",
             "scPartyToTheLitigation",
             "scSiuID",
             "scSiuLink"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
-          "rowLimit": 100,
-          "isPaged": true,
-          "makeDefault": false
-        },
-        {
-          "verb": "addSPView",
-          "name": "Groups",
-          "id": "f88156e3-8c04-4095-9379-da0f1faaddf4",
-          "viewFields": 
-          [
-            "scPersonEntityName",
-            "luPersonAndEntityGroupMembers",
-            "scSiuID",
-            "scSiuLink"
-          ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Neq>
+                       <FieldRef Name=\"scCategory\" />
+                       <Value Type=\"Text\">Group</Value>
+                      </Neq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scPersonEntityNameText\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -307,16 +276,24 @@
           "id": "aa8949df-508f-43e9-8e9f-5cd1cd5b8338",
           "viewFields": 
           [
-            "scPersonEntityName",
+            "scPersonEntityNameText",
             "scCategory",
             "scPartyToTheLitigation",
             "scSiuID",
             "scSiuLink"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Neq>
+                       <FieldRef Name=\"scCategory\" />
+                       <Value Type=\"Text\">Attorney</Value>
+                      </Neq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scPersonEntityNameText\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
-          "makeDefault": false
+          "makeDefault": true
         },
         {
           "verb": "addSPView",
@@ -324,16 +301,24 @@
           "id": "a947fae1-417c-45e4-8c89-79b535cedc69",
           "viewFields": 
           [
-            "scPersonEntityName",
+            "scPersonEntityNameText",
             "scCategory",
             "scPartyToTheLitigation",
             "scSiuID",
             "scSiuLink"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"scPartyToTheLitigation\" />
+                       <Value Type=\"Text\">Yes</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scPersonEntityNameText\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
-          "makeDefault": true
+          "makeDefault": false
         },
         {
           "verb": "addSPView",
@@ -341,13 +326,15 @@
           "id": "fb3ba702-3b48-4e47-b578-3394f024bcc0",
           "viewFields": 
           [
-            "scPersonEntityName",
+            "scPersonEntityNameText",
             "scCategory",
             "scPartyToTheLitigation",
             "scSiuID",
             "scSiuLink"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<OrderBy>
+                      <FieldRef Name=\"scPersonEntityNameText\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -358,23 +345,26 @@
           "id": "5ec75103-3cee-43b8-aedb-61cc601d9d9b",
           "viewFields": 
           [
-            "scPersonEntityName",
+            "scPersonEntityNameText",
             "scCategory",
             "scPartyToTheLitigation",
             "scSiuID",
             "scSiuLink"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"scCategory\" />
+                       <Value Type=\"Text\">Group</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scPersonEntityNameText\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
         }
       ]
-    },
-    {
-      "verb": "createSiteColumnXml",
-      "schemaXml": "<Field ID=\"{d85c1c4c-afc1-41e2-b347-390e760aec7a}\" Type=\"MultiChoice\" DisplayName=\"Defendant(s)\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityName\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luDefendants\" Name=\"luDefendants\" />",
-      "targetListName": "Person and Entity List"
     },
     {
       "verb": "createSPList",
@@ -395,10 +385,11 @@
           "addToDefaultView": true
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luDefendants",
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"LookupMulti\" DisplayName=\"Defendant(s)\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{b4d16eba-4b65-430e-adc8-b4ea7c2c96bb}\" StaticName=\"luDefendants1\" Name=\"luDefendants1\" />",
+          "targetListName": "Person and Entity List",
           "addToDefaultView": true
-        }
+        } 
       ]
     }
   ],

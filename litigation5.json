@@ -28,31 +28,11 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luCorrespondenceType"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luCourtNoticeType"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scDateFiledWithCourt"
         },
         {
           "verb": "addSiteColumn",
           "internalName": "scDateServed"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDefendantGroups"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDefendants"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDepDate"
         },
         {
           "verb": "addSiteColumn",
@@ -64,23 +44,7 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luDeponent"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDeposingAttorney"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scItemDescription"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDiscoverySet"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDiscoveryType"
         },
         {
           "verb": "addSiteColumn",
@@ -96,10 +60,6 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luFilingAttorney"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scFormat"
         },
         {
@@ -112,10 +72,6 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luHeardBefore"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scJudge"
         },
         {
@@ -123,20 +79,19 @@
           "internalName": "scLastName"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luMotionPart"
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"LookupMulti\" DisplayName=\"Motion Type\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{9d7625fd-c24b-430c-8ed7-19cba9505884}\" StaticName=\"luMotionType1\" Name=\"luMotionType1\" />",
+          "targetListName": "Motion Type"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luMotionType"
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"Lookup\" DisplayName=\"Motion Type 2\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"spPleadingTypeLabel\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{78b63350-fc30-4920-a356-0cec06787d4e}\" StaticName=\"luMotionType2\" Name=\"luMotionType2\" />",
+          "targetListName": "Pleading Doc Type"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luMotionType2"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luMovingParty"
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"LookupMulti\" DisplayName=\"Moving Party\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{8e2811b5-cd2e-48af-8969-9718c80f0442}\" StaticName=\"luMovingParty\" Name=\"luMovingParty\" />",
+          "targetListName": "Person and Entity List"
         },
         {
           "verb": "addSiteColumn",
@@ -163,20 +118,9 @@
           "internalName": "scNonPartyWitnessText"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luNonPartyWitness"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderDescription"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderType"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luPleadingType"
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"Lookup\" DisplayName=\"Non-Party Witness\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{d555608e-4f67-45a5-b77e-48d4ccaab833}\" StaticName=\"luNonPartyWitness\" Name=\"luNonPartyWitness\" />",
+          "targetListName": "Person and Entity List"
         },
         {
           "verb": "addSiteColumn",
@@ -200,23 +144,11 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luServedDocTypes"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scServiceDate"
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luSettlementDocumentType"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scTo"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luTranscriptType"
         },
         {
           "verb": "addSiteColumn",
@@ -243,58 +175,6 @@
           "name": "Appendices"
         },
         {
-          "verb": "addContentType",
-          "name": "Correspondence"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Court Notices"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Deposition Notices"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Discovery"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Motion"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Orders"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Pleadings"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Proof Of Service"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Settlment Documents"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Subpoena Docs Misc"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Summons"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Transcripts"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Email Folder"
-        },
-        {
           "verb": "addSPView",
           "name": "Appendices",
           "id": "9b1c5ea6-5d8e-4232-b431-3067c8ce84c2",
@@ -307,10 +187,18 @@
             "scRelatedDocs",
             "Modified"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Appendices</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"Title\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
-          "makeDefault": false
+          "makeDefault": false          
         },
         {
           "verb": "addSPView",
@@ -325,14 +213,27 @@
             "scTo",
             "scFromChoice",
             "scReceived",
-            "luCorrespondenceType",
             "scDocumentDescription",
             "scRelatedDocs",
             "scNOMDEPNo",
             "scNJLSNo",
             "Modified By"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Or>
+                        <Eq>
+                         <FieldRef Name=\"ContentType\" />
+                         <Value Type=\"Computed\">Correspondence</Value>
+                        </Eq>
+                        <Eq>
+                         <FieldRef Name=\"ContentType\" />
+                         <Value Type=\"Computed\">Email Folder</Value>
+                        </Eq>
+                      </Or>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -346,15 +247,21 @@
             "ID",
             "Type",
             "Name",
-            "luCourtNoticeType",
-            "luDefendants",
             "scDocumentDescription",
             "scDocumentDate",
             "scReceived",
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Court Notices</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -369,15 +276,21 @@
             "Type",
             "Name",
             "scDocumentDate",
-            "luDeponent",
-            "luDeposingAttorney",
             "scVideo",
             "scDepDate",
             "scDepNo",
             "scComments",
             "Modified By"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Deposition Notices</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -393,17 +306,21 @@
             "Name",
             "scROGNTPRFA",
             "scDocumentDate",
-            "luDefendants",
-            "luDefendantGroups",
-            "luDiscoverySet",
-            "luDiscoveryType",
             "scDocumentDescription",
             "scRelatedDocs",
             "scBatesNumber",
             "scReceived",
             "Modified By"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Discovery</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -419,11 +336,8 @@
             "Name", 
             "scNOMNo",
             "scDocumentDate",
-            "luMotionPart",
             "luMovingParty",
-            "luFilingAttorney",
             "luMotionType",
-            "luDefendants",
             "luNonPartyWitness",
             "scComment",
             "scNOMSub",
@@ -432,7 +346,15 @@
             "Modified",
             "Modified By"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Motion</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -448,15 +370,20 @@
             "scDateFiledWithCourt",
             "Name",
             "scPO",
-            "luOrderType",
-            "luOrderDescription",
-            "luDefendants",
             "scItemDescription",
             "scJudge",
             "scNOMNo",
             "Modified"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Orders</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDateFiledWithCourt\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -470,16 +397,22 @@
             "ID",
             "Type",
             "Name",
-            "luPleadingType",
             "scDocumentDate",
             "scDateFiledWithCourt",
             "scDocumentDescription",
             "scAdditionalComments",
-            "luDefendants",
             "scFiledWithCourt",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Pleadings</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -493,16 +426,22 @@
             "ID",
             "Type",
             "Name",
-            "luDefendants",
             "luNonPartyWitness",
-            "luServedDocTypes",
             "scServiceDate",
             "scDateFiledWithCourt",
             "scRelatedDocs",
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Proof Of Service</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scServiceDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -517,14 +456,20 @@
             "Type",
             "Name",
             "scDocumentDate",
-            "luDefendants",
             "scDocumentDescription",
             "scRelatedDocs",
-            "luSettlementDocumentType",
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Settlement Documents</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -539,7 +484,6 @@
             "Type",
             "Name",
             "scReceived",
-            "luDefendants",
             "luNonPartyWitness",
             "scDocumentDescription",
             "scBatesNumber",
@@ -547,7 +491,15 @@
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Subpoena Docs Misc</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scReceived\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -561,13 +513,20 @@
             "ID",
             "Type",
             "Name",
-            "luDefendants",
             "scDocumentDate",
             "scDateServed",
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Summons</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -582,16 +541,21 @@
             "Type",
             "Name",
             "scDocumentDescription",
-            "luTranscriptType",
             "scFormat",
             "scDocumentDate",
-            "luDefendants",
             "luNonPartyWitness",
-            "luHeardBefore",
             "Modified",
             "Content Type"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Transcripts</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"scDocumentDate\" Ascending=\"FALSE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": false
@@ -608,15 +572,19 @@
             "Modified",
             "Modified By",
             "Content Type",
-            "luDeponent",
-            "luDeposingAttorney",
             "scPO",
             "scNJLSNo",
             "luNonPartyWitness",
             "scVideo",
             "scComment"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Document</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": true
@@ -732,9 +700,10 @@
           "internalName": "scDefendant"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luNonDefendant"
-        }
+          "verb": "addSPLookupFieldXml",
+          "schemaXml": "<Field Type=\"Lookup\" DisplayName=\"Non-Defendant\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"scPersonEntityNameText\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" ID=\"{8718c382-61f6-453c-bf5b-756b5ad07042}\" StaticName=\"luNonDefendant\" Name=\"luNonDefendant\" />",
+          "targetListName": "Person and Entity List"
+        } 
       ]
     },
     {

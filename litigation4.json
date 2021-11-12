@@ -12,14 +12,6 @@
         [
           {
             "verb": "addSiteColumn",
-            "internalName": "luDefendants"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luNonDefendant"
-          },
-          {
-            "verb": "addSiteColumn",
             "internalName": "scServiceDate"
           },
           {
@@ -29,10 +21,6 @@
           {
             "verb": "addSiteColumn",
             "internalName": "scDateFiledWithCourt"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luServedDocTypes"
           },
           {
             "verb": "addSiteColumn",
@@ -55,15 +43,7 @@
           },
           {
             "verb": "addSiteColumn",
-            "internalName": "luDefendants"
-          },
-          {
-            "verb": "addSiteColumn",
             "internalName": "scDocumentDescription"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luSettlementDocumentType"
           },
           {
             "verb": "addSiteColumn",
@@ -83,14 +63,6 @@
           {
             "verb": "addSiteColumn",
             "internalName": "scReceived"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luDefendants"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luNonDefendant"
           },
           {
             "verb": "addSiteColumn",
@@ -122,10 +94,6 @@
           {
             "verb": "addSiteColumn",
             "internalName": "scDateServed"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luDefendants"
           }
         ]
     },
@@ -148,10 +116,6 @@
           },
           {
             "verb": "addSiteColumn",
-            "internalName": "luTranscriptType"
-          },
-          {
-            "verb": "addSiteColumn",
             "internalName": "scFormat"
           },
           {
@@ -165,18 +129,6 @@
           {
             "verb": "addSiteColumn",
             "internalName": "scDocumentDescription"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luDefendants"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luNonDefendant"
-          },
-          {
-            "verb": "addSiteColumn",
-            "internalName": "luHeardBefore"
           }
         ]
     },
@@ -362,11 +314,6 @@
     },
     {
       "verb": "createSiteColumnXml",
-      "schemaXml": "<Field ID=\"{d1dd5638-5b80-44e0-8bab-3e6450dc190c}\" Type=\"Lookup\" DisplayName=\"Dep Date\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"Title\" UnlimitedLengthInDocumentLibrary=\"FALSE\" RelationshipDeleteBehavior=\"None\" StaticName=\"luDepDate\" Name=\"luDepDate\" />",
-      "targetListName": "Litigation Calendar"
-    },
-    {
-      "verb": "createSiteColumnXml",
       "schemaXml": "<Field ID=\"{3bac4317-3534-441a-b540-5943e9a0568c}\" Type=\"Choice\" DisplayName=\"Report Of\" Required=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"TRUE\" StaticName=\"scVOLPART\" Name=\"scReportOf\"><CHOICES>
       <CHOICE>Plaintiff</CHOICE>
       <CHOICE>Defendant</CHOICE></CHOICES></Field>"
@@ -444,10 +391,6 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luDefendants"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scItemDescription"
         },
         {
@@ -489,10 +432,6 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luHeardBefore"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scJudge"
         },
         {
@@ -502,18 +441,6 @@
         {
           "verb": "addSiteColumn",
           "internalName": "scNOMNo"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luNonDefendant"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderDescription"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderType"
         },
         {
           "verb": "addSiteColumn",
@@ -538,10 +465,6 @@
           "addToDefaultView": true
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luTranscriptType"
-        },
-        {
           "verb": "addSPField",
           "fieldType": "Text",
           "displayName": "Treating Facility",
@@ -564,23 +487,11 @@
         },
         {
           "verb": "addContentType",
-          "name": "Transcripts"
-        },
-        {
-          "verb": "addContentType",
           "name": "Discovery Docs"
         },
         {
           "verb": "addContentType",
           "name": "Agreements"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Certifications"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Orders"
         },
         {
           "verb": "addSPView",
@@ -596,7 +507,6 @@
             "spSCH",
             "scBatesNumber",
             "scDocumentDate",
-            "luTranscriptType",
             "scLastName",
             "scDocDescription",
             "scArbDocType",
@@ -607,7 +517,15 @@
             "scAttachedDoc",
             "scR4182Documents"
           ],
-          "query": "<OrderBy><FieldRef Name=\"Title\" /></OrderBy>",
+          "query": "<Where>
+                      <Eq>
+                       <FieldRef Name=\"ContentType\" />
+                       <Value Type=\"Computed\">Document</Value>
+                      </Eq>
+                    </Where>
+                    <OrderBy>
+                      <FieldRef Name=\"Name\" Ascending=\"TRUE\" />
+                    </OrderBy>",
           "rowLimit": 100,
           "isPaged": true,
           "makeDefault": true
@@ -684,14 +602,6 @@
           "internalName": "scComments"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luCorrespondenceType"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luCourtNoticeType"
-        },
-        {
           "verb": "addSPField",
           "fieldType": "DateTime",
           "displayName": "Date Filed",
@@ -710,18 +620,6 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luDefendantGroups"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDefendants"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDepDate"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scDepDate"
         },
         {
@@ -735,19 +633,7 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luDeponent"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scItemDescription"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDiscoverySet"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luDiscoveryType"
         },
         {
           "verb": "addSiteColumn",
@@ -763,19 +649,11 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luFilingAttorney"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scFormat"
         },
         {
           "verb": "addSiteColumn",
           "internalName": "scFromChoice"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luHeardBefore"
         },
         {
           "verb": "addSiteColumn",
@@ -787,39 +665,11 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luMotionPart"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luMotionType"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luMovingParty"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scNOMNo"
         },
         {
           "verb": "addSiteColumn",
           "internalName": "scNOMSub"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luNonDefendant"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderDescription"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luOrderType"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luPleadingType"
         },
         {
           "verb": "addSiteColumn",
@@ -838,10 +688,6 @@
           "internalName": "scROGNTPRFA"
         },
         {
-          "verb": "addSiteColumn",
-          "internalName": "luServedDocTypes"
-        },
-        {
           "verb": "addSPField",
           "fieldType": "DateTime",
           "displayName": "Service Date",
@@ -852,15 +698,7 @@
         },
         {
           "verb": "addSiteColumn",
-          "internalName": "luSettlementDocumentType"
-        },
-        {
-          "verb": "addSiteColumn",
           "internalName": "scTo"
-        },
-        {
-          "verb": "addSiteColumn",
-          "internalName": "luTranscriptType"
         },
         {
           "verb": "addSiteColumn",
@@ -881,54 +719,6 @@
         {
           "verb": "addContentType",
           "name": "Appendices"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Correspondence"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Court Notices"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Deposition Notices"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Discovery"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Motion"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Orders"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Pleadings"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Proof Of Service"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Settlement Documents"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Subpoena Docs Misc"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Summons"
-        },
-        {
-          "verb": "addContentType",
-          "name": "Transcripts"
         }
       ]
     },
